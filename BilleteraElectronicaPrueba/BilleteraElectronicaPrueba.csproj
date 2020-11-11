@@ -49,11 +49,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CuentaCorrientePrueba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BilleteraElectronicaForms\BilleteraElectronicaForms.csproj">
+      <Project>{24d3be64-d999-4471-8740-6b3b2885bc44}</Project>
+      <Name>BilleteraElectronicaForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BilleteraElectronicaLibreria\BilleteraElectronicaLibreria.csproj">
+      <Project>{0567c1fb-cc52-456c-8e5b-eeff3f3cead9}</Project>
+      <Name>BilleteraElectronicaLibreria</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
